@@ -248,6 +248,166 @@
             
                 </group>
 
+                    
+                    <!--            BrickWall            -->
+
+                    <transform translation="-21 0 8">
+                        <shape>
+                            <appearance>
+                                 <material diffuseColor="0.65 0.5 0.3" specularColor="1 1 1" shininess="0.9"></material>
+                            </appearance>
+                        <box DEF="BrickWall" size="0.5 1 6" solid="true" />
+                        </shape>
+                    </transform>
+                                
+                    <transform translation="-21 0.1 1">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="0.65 0.5 0.3" specularColor="1 1 1" shininess="0.9"></material>
+                            </appearance>
+                        <box DEF="BrickWall2" size="0.5 1.2 8" solid="true" />
+                        </shape>
+                    </transform>
+                                
+                    <transform translation="-21 0.1 -7">
+                        <shape>
+                            <appearance>
+                                 <material diffuseColor="0.65 0.5 0.3" specularColor="1 1 1" shininess="0.9"></material>
+                            </appearance>
+                        <box DEF="BrickWall3" size="0.5 1.4 8" solid="true" />
+                        </shape>
+                    </transform>
+
+                    <!--                Banner          -->
+                    
+                <group DEF="banner">
+                        
+                    <transform translation="-20.4 2.5 -9">
+                        <shape>
+                            <appearance>
+                                 <material diffuseColor="1 1 1" specularColor="1 1 1" shininess="0.9"></material>
+                            </appearance>
+                        <cylinder DEF="bannercolumn" radius="0.2" height="8" solid="true" />
+                        </shape>
+                    </transform>
+                           
+                    <transform translation="-17.5 2.5 -9">
+                        <shape>
+                            <appearance>
+                                 <material diffuseColor="1 1 1" specularColor="1 1 1" shininess="0.9"></material>
+                            </appearance>
+                        <cylinder USE="bannercolumn" />
+                        </shape>
+                    </transform>
+            
+                    <transform translation="-19 6.4 -9">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="1 1 1" specularColor="1 1 1" shininess="0.9"></material>
+                            </appearance>
+                        <box DEF="bannertoppanel" size="3 0.1 0.4" solid="true" />
+                        </shape>
+                    </transform>
+                                
+                    <transform translation="-19 4.7 -9">
+                        <shape>
+                            <appearance>
+                                 <material diffuseColor="1 1 1" specularColor="1 1 1" shininess="0.9"></material>
+                            </appearance>
+                        <box USE="bannertoppanel"/>
+                        </shape>
+                    </transform>
+
+                    <transform translation="-19 2.7 -9">
+                        <shape>
+                            <appearance>
+                                 <material diffuseColor="1 1 1" specularColor="1 1 1" shininess="0.9"></material>
+                            </appearance>
+                        <box USE="bannertoppanel"/>
+                        </shape>
+                    </transform>
+                    
+                    <transform translation="-19 0.7 -9">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="1 1 1" specularColor="1 1 1" shininess="0.9"></material>
+                            </appearance>
+                        <box USE="bannertoppanel"/>
+                        </shape>
+                    </transform>
+                    
+                    
+                    <!--                    Banner Panels          -->
+                    
+                <group DEF="bannerpanels">
+                    
+                    <!--        Bottom          -->
+                    <transform translation="-19 1.7 -9.1">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/gwbg9C6.gif"></ImageTexture>
+                            </appearance>
+                        <box DEF="bannersidepanelfront" size="3 2 0.1" solid="true"/>
+                        </shape>
+                    </transform>
+                        
+                    <!--        Middle          -->
+                    <transform translation="-19 3.7 -9.1">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/UEpkH8I.gif"></ImageTexture>
+                            </appearance>
+                        <box USE="bannersidepanelfront"/>
+                        </shape>
+                    </transform>
+                    
+                    <!--          Top           -->
+                    <transform translation="-19 5.55 -9.1">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/dmBdsIX.gif"></ImageTexture>
+                            </appearance>
+                        <box DEF="bannersidepanelsmall" size="2.5 1.5 0.1" solid="true" />
+                        </shape>
+                    </transform>
+
+                    <!--        Back Panels         -->
+                    
+                    <!--        Bottom          -->
+                    <transform translation="-19 1.7 -8.9">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/gwbg9C6.gif"></ImageTexture>
+                            </appearance>
+                        <box USE="bannersidepanelfront"/>
+                        </shape>
+                    </transform>
+                    
+                    <!--         Middle         -->                              
+                    <transform translation="-19 3.7 -8.9">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/UEpkH8I.gif"></ImageTexture>
+                            </appearance>  
+                        <box USE="bannersidepanelfront"/>
+                        </shape>
+                    </transform>
+                    
+                    <!--          Top         -->
+                    <transform translation="-19 5.55 -8.9">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/dmBdsIX.gif"></ImageTexture>
+                            </appearance>
+                        <box DEF="bannersidepanelsmall" size="2.5 1.5 0.1" solid="true" />
+                        </shape>
+                    </transform> 
+                    
+                    </group>
+                  </group>   
+                </group>
+            </transform>
+        
 
         </scene>        
     </x3d>        
