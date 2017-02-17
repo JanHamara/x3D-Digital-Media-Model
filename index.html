@@ -36,6 +36,88 @@
             <background skyColor="120 120 2"></background>
             <directionalLight id="directional" direction="6 -5 -4" intensity="0.2" color="1 1 1" on="true" shadowIntensity="0.9"></directionalLight>
             
+                        
+<!--            Gas Station             -->
+            
+            
+<!--            Ground              -->
+            
+            <transform translation="0 -1 0">
+                <shape>
+                    <appearance>
+                        <material diffuseColor="0.6 1 1" specularColor="1 1 1" shininess="0.5"></material>
+                    </appearance>
+                    <box DEF="ground" size="40 1 24" solid="true"/>
+                </shape>
+            </transform>
+            
+            <transform translation="0 -1 0">
+                <shape>
+                    <appearance>
+                        <material diffuseColor="0.6 1 1" specularColor="1 1 1" shininess="0.5"></material>
+                    </appearance>
+                    <box DEF="grounds" size="50 1 50" solid="true"/>
+                </shape>
+            </transform>
+            
+            
+<!--            Main Building           -->
+            
+            <transform translation="13 2.5 0">
+                <shape>
+                    <appearance>
+                        <ImageTexture url="https://i.imgur.com/kdjUD4g.gif"></ImageTexture>
+                    </appearance>
+                    <box DEF="Main" size="14 6 24" solid="true"/>
+                </shape>
+            </transform>
+            
+            <transform translation="6 2.7 0">
+                <shape>
+                    <appearance>
+                        <ImageTexture url="https://i.imgur.com/Xkab4Lc.gif"></ImageTexture>
+                    </appearance>
+                    <box DEF="LSide" size="0.6 6.4 24" solid="true"/>
+                </shape>
+            </transform>
+            
+            <transform translation="20 2.7 0">
+                <shape>
+                    <appearance>
+                        <ImageTexture url="https://i.imgur.com/Xkab4Lc.gif"></ImageTexture>
+                    </appearance>
+                    <box USE="LSide"/>
+                </shape>
+            </transform>
+            
+            <transform translation="13 2.7 11.7">
+                        <shape>
+                    <appearance>
+                        <ImageTexture url="https://i.imgur.com/Xkab4Lc.gif"></ImageTexture>
+                    </appearance>
+                    <box DEF="SSide" size="14 6.4 0.6" solid="true"/>
+                </shape>
+            </transform>
+            
+            <transform translation="13 2.7 -11.7">
+                <shape>
+                    <appearance>
+                        <ImageTexture url="https://i.imgur.com/Xkab4Lc.gif"></ImageTexture>
+                    </appearance>
+                    <box USE="SSide"/>
+                </shape>
+            </transform>
+            
+            <transform translation="5.6 4.6 -3.3">
+                <shape>
+                    <appearance>
+                        <material diffuseColor="0.65 0.1 0.3" specularColor="1 1 1" shininess="0.9"></material>
+                    </appearance>
+                    <box DEF="BannerAboveExit" size="0.2 2 16.8" solid="true" />
+                </shape>
+            </transform>
+            
+
 
         </scene>        
     </x3d>        
