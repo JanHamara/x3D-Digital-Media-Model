@@ -108,15 +108,92 @@
                 </shape>
             </transform>
             
-            <transform translation="5.6 4.6 -3.3">
+            <transform translation="5.6 4.6 -3.8">
                 <shape>
                     <appearance>
-                        <material diffuseColor="0.65 0.1 0.3" specularColor="1 1 1" shininess="0.9"></material>
+                       <ImageTexture url="https://i.imgur.com/M2jGahT.gif"></ImageTexture>
                     </appearance>
-                    <box DEF="BannerAboveExit" size="0.2 2 16.8" solid="true" />
+                    <box DEF="BannerAboveExit" size="0.2 2 15.2" solid="true" />
                 </shape>
             </transform>
             
+<!--            Adverts     -->
+            
+            <transform translation="5.7 1.8 4.7">
+                <shape>
+                    <appearance>
+                       <ImageTexture url="https://i.imgur.com/M2jGahT.gif"></ImageTexture>
+                    </appearance>
+                    <box DEF="AdvertTable" size="0.05 1.5 1" solid="true" />
+                </shape>
+            </transform>
+            
+            <transform translation="5.7 1.8 7.4">
+                <shape>
+                    <appearance>
+                       <ImageTexture url="https://i.imgur.com/M2jGahT.gif"></ImageTexture>
+                    </appearance>
+                    <box USE="AdvertTable" />
+                </shape>
+            </transform>
+            
+            <transform translation="5.7 1.55 8.7">
+                <shape>
+                    <appearance>
+                       <ImageTexture url="https://i.imgur.com/M2jGahT.gif"></ImageTexture>
+                    </appearance>
+                    <box DEF="AdvertTableSquare" size="0.05 1 1" solid="true" />
+                </shape>
+            </transform>
+            
+<!--            ATM         -->
+            
+            <transform translation="5.7 1.2 10.5">
+                <shape>
+                    <appearance>
+                       <ImageTexture url="https://i.imgur.com/RNsDrUB.gif"></ImageTexture>
+                    </appearance>
+                    <box DEF="ATM" size="0.05 3.5 2" solid="true" />
+                </shape>
+            </transform>
+            
+<!--            Mini black columns      -->
+            
+        <group DEF="blackcolumn">
+            
+            <transform translation="5.55 -0.2 9.5">
+                <shape>
+                    <appearance>
+                       <material diffuseColor="0 0 0" specularColor="0.2 0.2 0.2" shininess="0.99"></material>
+                    </appearance>
+                <cylinder DEF="blackATMcolumn" radius="0.1" height="0.6" solid="true" />
+                </shape>
+            </transform>
+            
+            <transform translation="5.55 0.1 9.5">
+                <shape>
+                    <appearance>
+                       <material diffuseColor="0 0 0" specularColor="0.2 0.2 0.2" shininess="0.99"></material>
+                    </appearance>
+                <cylinder DEF="blackATMcolumn" radius="0.08" height="0.1" solid="true" />
+                </shape>
+            </transform>
+            
+            <transform translation="5.55 0.25 9.5">
+                <shape>
+                    <appearance>
+                       <material diffuseColor="0 0 0" specularColor="0.2 0.2 0.2" shininess="0.99"></material>
+                    </appearance>
+                <cylinder DEF="blackATMcolumn" radius="0.1" height="0.2" solid="true" />
+                </shape>
+            </transform>
+            
+        </group>
+            
+        <transform translation="0 0 2">   
+        <group USE="blackcolumn">
+        </group>
+        </transform>
 
 <!--            Pump           -->
             
