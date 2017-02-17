@@ -118,6 +118,136 @@
             </transform>
             
 
+<!--            Pump           -->
+            
+            
+            <transform translation="0 0 -3.2" rotation="0 -0.02 0 0.13">
+                <group DEF="Pump">
+
+<!--            Base            -->
+                    
+                    <transform translation="-7 7 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/kdjUD4g.gif"></ImageTexture>
+                            </appearance>
+                        <box DEF="PumpRoof" size="26 1 10" solid="true"/>
+                        </shape>
+                    </transform>
+                    
+                    <transform translation="-7 6.44 0">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/B4iByeC.gif"></ImageTexture>
+                            </appearance>
+                        <box DEF="PumpRoofUnderCover" size="26 0.1 10" solid="true"/>
+                        </shape>
+                    </transform>
+
+
+                    <!--                Roof Sides - Red Sainsbury's Cover          -->
+                    
+                <group DEF="PumpRoof">
+                                    
+                    <transform translation="-7 7 5">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/iIqCg5D.gif"></ImageTexture>
+                            </appearance>
+                        <box DEF="LongSide" size="26.2 1.2 0.2" solid="true"/>
+                        </shape>
+                    </transform>
+                
+                    <transform translation="-7 7 -5">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/iIqCg5D.gif"></ImageTexture>
+                           </appearance>
+                        <box USE="LongSide"/>
+                        </shape>
+                   </transform>
+                    
+                   <transform translation="-20 7 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/9UwfT7B.gif"></ImageTexture>
+                            </appearance>
+                        <box DEF="ShortSide" size="0.2 1.2 10.2" solid="true"/>
+                        </shape>
+                    </transform>
+                
+                    <transform translation="6 7 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/9UwfT7B.gif"></ImageTexture>
+                            </appearance>
+                        <box USE="ShortSide"/>
+                        </shape>
+                    </transform>
+
+                    <transform translation="0.1 7 0">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/9UwfT7B.gif"></ImageTexture>
+                            </appearance>
+                        <box DEF="ShortSideIn" size="0.2 1.2 10" solid="true"/>
+                        </shape>
+                    </transform>
+
+                    <transform translation="-12.2 7 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/9UwfT7B.gif"></ImageTexture>
+                            </appearance>
+                        <box DEF="ShortSideIn" size="0.2 1.2 10" solid="true"/>
+                        </shape>
+                    </transform>
+
+                    <transform translation="-5.8 7 0">
+                        <shape>
+                            <appearance>
+                                 <material diffuseColor="0.5 0.5 0.5" specularColor="1 1 1" shininess="0.8"></material>
+                            </appearance>
+                        <box DEF="ShortSide" size="0.1 1.2 10" solid="true"/>
+                        </shape>
+                    </transform>
+                    
+                </group>
+                    
+                    
+                    <!--			Columns       -->
+
+                <group DEF="Columns">
+                    
+                    <transform translation="-7 3 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/Nl5Fpc7.gif"></ImageTexture>
+                            </appearance>
+                        <box DEF="Column" size="0.5 7 0.5" solid="true"/>
+                        </shape>
+                    </transform>
+            
+                    <transform translation="-14 3 0">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/Nl5Fpc7.gif"></ImageTexture>
+                            </appearance>
+                        <box USE="Column"/>
+                        </shape>
+                    </transform>
+                            
+                    <transform translation="0 3 0">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/Nl5Fpc7.gif"></ImageTexture>
+                            </appearance>
+                        <box USE="Column"/>
+                        </shape>
+                    </transform>
+            
+                </group>
+
 
         </scene>        
     </x3d>        
