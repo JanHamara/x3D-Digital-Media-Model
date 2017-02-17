@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html, h1, h2, p, div, a, img, header, footer, span, section, nav, aside, article, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    font-size: 100%;
+    font-family: cursive;
+    font-weight: 700;
+}
