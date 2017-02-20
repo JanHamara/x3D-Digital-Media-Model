@@ -896,8 +896,7 @@
                         </shape>
                     </transform>
                         
-                    <transform translation="-14.3 2.4
-                                            1.85">
+                    <transform translation="-14.3 2.4 1.85">
                         <shape>
                             <appearance>
                                 <ImageTexture url="https://i.imgur.com/ZOd0DGV.gif"></ImageTexture>
@@ -908,8 +907,7 @@
                         
 <!--                    Trash Bin           `   -->
                         
-                    <transform translation="-14 0.4
-                                            -1">
+                    <transform translation="-14 0.4 -1">
                         <shape>
                             <appearance>
                                 <ImageTexture url="https://i.imgur.com/dLEsPTM.gif"></ImageTexture>
@@ -928,7 +926,115 @@
                     <transform translation="14 0 0">
                     <group USE="station"></group>
                     </transform>
+
                     
+<!--                Middle Base Station             -->
+                        
+                    <transform translation="-7 -0.5 5">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/Nl5Fpc7.gif"></ImageTexture>
+                            </appearance>
+                        <box DEF="BaseColumn" size="1 0.4 6.8" solid="true"/>
+                        </shape>
+                    </transform> 
+                    
+                    
+                        <!--                    Base Sides          -->
+                        
+                    <transform translation="-6.5 -0.5 5">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/awz4TRG.gif"></ImageTexture>
+                            </appearance>
+                        <box DEF="BaseColumnSide" size="0.3 0.4 6.8" solid="true"/>
+                        </shape>
+                    </transform> 
+                        
+                    <transform translation="-7.5 -0.5 5">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/awz4TRG.gif"></ImageTexture>
+                            </appearance>
+                        <box USE="BaseColumnSide"/>
+                        </shape>
+                    </transform>
+                        
+                        
+                    <transform translation="-7 -0.5 8.3">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/CYU687y.gif"></ImageTexture>
+                            </appearance>
+                        <box USE="BaseColumnSideS"/>
+                        </shape>
+                    </transform>  
+                    
+                    
+<!--                    Skeleton                -->
+
+                    <transform translation="-7.4 0.3 5.5">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/X7BLuUp.gif"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="Tube_One" radius="0.05" height="1.2"/>
+                        </shape>
+                    </transform>
+                    
+                    <transform translation="-7.4 0.3 8">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/X7BLuUp.gif"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="Tube_One" radius="0.05" height="1.2"/>
+                        </shape>
+                    </transform>
+                    
+                    <transform translation="-6.7 0.3 6">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/X7BLuUp.gif"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="Tube_One" radius="0.05" height="1.2"/>
+                        </shape>
+                    </transform>
+                    
+                    <transform translation="-6.7 0.3 7.5">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/X7BLuUp.gif"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="Tube_One" radius="0.05" height="1.2"/>
+                        </shape>
+                    </transform>
+                    
+                    <transform translation="-7.1 0.86 5.5" rotation="0 0 1.57 1.57">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/X7BLuUp.gif"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="Tube_One" radius="0.05" height="0.7"/>
+                        </shape>
+                    </transform>
+                    
+                    <transform translation="-7.1 0.86 8" rotation="0 0 1.57 1.57">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/X7BLuUp.gif"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="Tube_One" radius="0.05" height="0.7"/>
+                        </shape>
+                    </transform>
+                    
+                    <transform translation="-6.7 0.86 6.75" rotation="1.57 0 0 1.57">
+                        <shape>
+                            <appearance>
+                                 <ImageTexture url="https://i.imgur.com/X7BLuUp.gif"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="Tube_One" radius="0.05" height="2.6"/>
+                        </shape>
+                    </transform>
                     
                     
                     
@@ -1105,7 +1211,93 @@
                 </group>
             </transform>
         
+            
+<!--            Costa Cup Advert            -->
+            
+            <transform translation="-9 -0.4 -18">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/X7BLuUp.gif"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="CostaCupBase" radius="0.7" height="0.1"/>
+                        </shape>
+            </transform>
+            
+            <transform translation="-9 0.25 -18">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/fT3uPCV.gif"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="CostaCup" radius="0.5" height="1.2"/>
+                        </shape>
+            </transform> 
+            
+            <transform translation="-9 0.8 -18">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/iaEnVLV.gif"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="CostaTop" radius="0.55" height="0.1"/>
+                        </shape>
+            </transform> 
+            
+            <transform translation="-9 0.95 -18">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/iaEnVLV.gif"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="CostaTop2" radius="0.5" height="0.2"/>
+                        </shape>
+            </transform> 
+            
+            <transform translation="-9 1.2 -18" rotation="0 0.8 0 0.8">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/lTzBucsg.gif"></ImageTexture>
+                            </appearance>
+                        <box DEF="CostaAd" size="0.8 0.4 0.02" solid="false"/>
+                        </shape>
+            </transform> 
+            
+            
+<!--            Stand Gas Sign Column       -->
 
+            <transform translation="-9.6 1 -19">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/X7BLuUp.gif"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="Pole" radius="0.05" height="3"/>
+                        </shape>
+            </transform>
+            
+            <group DEF="sign">
+            <transform translation="-9.6 2.5 -19.1" rotation="1.57 0 0 -1.57">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/BxjnZXM.png"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="PoleCircle" radius="0.4" height="0.01"/>
+                        </shape>
+            </transform>
+            </group>
+            
+            <transform translation="0 0 0" rotation="0 1.57 0 1.57">
+            <group USE="sign"></group>
+            </transform>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         </scene>        
     </x3d>        
     
