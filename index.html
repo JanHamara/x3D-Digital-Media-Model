@@ -670,7 +670,7 @@
                     <transform translation="-13.5 -0.5 1.8">
                         <shape>
                             <appearance>
-                                 <ImageTexture url="https://i.imgur.com/EyXIcY0.gif"></ImageTexture>
+                                 <ImageTexture url="https://i.imgur.com/awz4TRG.gif"></ImageTexture>
                             </appearance>
                         <box DEF="BaseColumnSide" size="0.3 0.4 6.8" solid="true"/>
                         </shape>
@@ -679,7 +679,7 @@
                     <transform translation="-14.5 -0.5 1.8">
                         <shape>
                             <appearance>
-                                 <ImageTexture url="https://i.imgur.com/EyXIcY0.gif"></ImageTexture>
+                                 <ImageTexture url="https://i.imgur.com/awz4TRG.gif"></ImageTexture>
                             </appearance>
                         <box USE="BaseColumnSide"/>
                         </shape>
@@ -688,7 +688,7 @@
                     <transform translation="-14 -0.5 -1.7">
                         <shape>
                             <appearance>
-                                 <ImageTexture url="https://i.imgur.com/EyXIcY0.gif"></ImageTexture>
+                                 <ImageTexture url="https://i.imgur.com/CYU687y.gif"></ImageTexture>
                             </appearance>
                         <box DEF="BaseColumnSideS" size="1.3 0.4 0.3" solid="true"/>
                         </shape>
@@ -697,7 +697,7 @@
                     <transform translation="-14 -0.5 5.3">
                         <shape>
                             <appearance>
-                                 <ImageTexture url="https://i.imgur.com/EyXIcY0.gif"></ImageTexture>
+                                 <ImageTexture url="https://i.imgur.com/CYU687y.gif"></ImageTexture>
                             </appearance>
                         <box USE="BaseColumnSideS"/>
                         </shape>
@@ -752,7 +752,7 @@
                         </shape>
                     </transform> 
                     
-                    <transform translation="-14 1.0 0.7">
+                    <transform translation="-14 1 0.7">
                         <shape>
                             <appearance>
                                 <material diffuseColor="0.1 0.1 0.1" specularColor="0.2 0.2 0.2" shininess="0.99"></material>
@@ -776,6 +776,24 @@
                                 <material diffuseColor="0.1 0.1 0.1" specularColor="0.2 0.2 0.2" shininess="0.99"></material>
                             </appearance>
                         <box USE="PumpStand3"/>
+                        </shape>
+                    </transform>
+                        
+                    <transform translation="-14.4 1.4 1" rotation="0 1.57 0 1.57">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/jQH54ec.gif"></ImageTexture>
+                            </appearance>
+                        <box DEF="PumpSide" size="0.9 3.3 0.05" solid="true"/>
+                        </shape>
+                    </transform>
+                    
+                    <transform translation="-13.6 1.4 1" rotation="0 1.57 0 1.57">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/jQH54ec.gif"></ImageTexture>
+                            </appearance>
+                        <box USE="PumpSide"/>
                         </shape>
                     </transform>
                     
@@ -888,15 +906,28 @@
                         </shape>
                     </transform>    
                         
+<!--                    Trash Bin           `   -->
                         
-                        
-                        
+                    <transform translation="-14 0.4
+                                            -1">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/dLEsPTM.gif"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="TrashBin" radius="0.3" height="1.4"/>
+                        </shape>
+                    </transform>   
                         
                         
                     </group>
                     
+                    <transform translation="7 0 0">
+                    <group USE="station"></group>
+                    </transform>
                     
-                    
+                    <transform translation="14 0 0">
+                    <group USE="station"></group>
+                    </transform>
                     
                     
                     
