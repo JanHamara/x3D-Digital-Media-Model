@@ -21,8 +21,6 @@
 <!--    Personal CSS file-->
     <link rel="stylesheet" href="index.css"></link>
 
-<!--    ADD META DATA LATER !!! -->
-
 </head>
     
 <body>
@@ -45,16 +43,16 @@
             <transform translation="0 -1 0">
                 <shape>
                     <appearance>
-                        <material diffuseColor="0.6 1 1" specularColor="1 1 1" shininess="0.5"></material>
+                        <ImageTexture url="https://i.imgur.com/aMfeKKq.png"></ImageTexture>
                     </appearance>
                     <box DEF="ground" size="40 1 24" solid="true"/>
                 </shape>
             </transform>
             
-            <transform translation="0 -1 0">
+            <transform translation="-0.7 -1 1">
                 <shape>
                     <appearance>
-                        <material diffuseColor="0.6 1 1" specularColor="1 1 1" shininess="0.5"></material>
+                        <ImageTexture url="https://i.imgur.com/TXukEBZ.jpg"></ImageTexture>
                     </appearance>
                     <box DEF="grounds" size="50 1 50" solid="true"/>
                 </shape>
@@ -349,7 +347,7 @@
 <!--            Pump           -->
             
             
-            <transform translation="0 0 -3.2" rotation="0 -0.02 0 0.13">
+            <transform translation="0 0 -3.7" rotation="0 -0.26 0 0.26">
                 <group DEF="Pump">
 
 <!--            Base            -->
@@ -1262,29 +1260,64 @@
             
 <!--            Stand Gas Sign Column       -->
 
-            <transform translation="-9.6 1 -19">
+            
+<!--            Signs           -->
+            
+            <group DEF="sign">
+                
+                    <transform translation="-9.6 1 -19">
                         <shape>
                             <appearance>
                                 <ImageTexture url="https://i.imgur.com/X7BLuUp.gif"></ImageTexture>
                             </appearance>
                         <cylinder DEF="Pole" radius="0.05" height="3"/>
                         </shape>
-            </transform>
-            
-            <group DEF="sign">
-            <transform translation="-9.6 2.5 -19.1" rotation="1.57 0 0 -1.57">
+                    </transform>
+                
+                    <transform translation="-9.6 2.5 -19.1" rotation="1.57 0 0 -1.57">
                         <shape>
                             <appearance>
                                 <ImageTexture url="https://i.imgur.com/BxjnZXM.png"></ImageTexture>
                             </appearance>
                         <cylinder DEF="PoleCircle" radius="0.4" height="0.01"/>
                         </shape>
-            </transform>
+                    </transform>
+                
             </group>
             
-            <transform translation="0 0 0" rotation="0 1.57 0 1.57">
+            <transform translation="-8.5 0 3.5" rotation="0 0 0 1.57">
             <group USE="sign"></group>
             </transform>
+            
+            
+            <transform translation="-3.4 0 -4.2" rotation="0 1.57 0 1.57">
+            <group DEF="signstop">
+                        
+                        <transform translation="-9.6 1 -19">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/X7BLuUp.gif"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="PoleStop" radius="0.05" height="3"/>
+                        </shape>
+            </transform>
+                
+            <transform translation="-9.6 2.5 -19.1" rotation="1.57 0 0 -1.57">
+                        <shape>
+                            <appearance>
+                                <ImageTexture url="https://i.imgur.com/sSQ7JuI.png"></ImageTexture>
+                            </appearance>
+                        <cylinder DEF="PoleCircleStop" radius="0.4" height="0.01"/>
+                        </shape>
+            </transform>
+                </group>
+            
+            <transform translation="-8 0 0" rotation="0 0 0 1.57">
+            <group USE="signstop"></group>
+            </transform>
+            
+            </transform>
+            
             
             
             
