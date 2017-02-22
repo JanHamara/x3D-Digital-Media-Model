@@ -16,10 +16,10 @@
     
 <!--     x3D Script & base CSS file -->
 	 <script src="http://www.x3dom.org/release/x3dom.js"></script>
-	 <link rel="stylesheet" href="http://www.x3dom.org/release/x3dom.css"></link>
+	 <link rel="stylesheet" href="http://www.x3dom.org/release/x3dom.css"/>
     
 <!--    Personal CSS file-->
-    <link rel="stylesheet" href="index.css"></link>
+    <link rel="stylesheet" href="index.css"/>
 
 </head>
     
@@ -31,8 +31,8 @@
 <!--            Viewpoints - Background - Lights            -->
             
             <viewpoint id="default" position="-27.5 12 40" orientation="-0.5 -1.8 0 0.6" description="Modellingangle"></viewpoint>
-            <background skyColor="120 120 2"></background>
-            <directionalLight id="directional" direction="6 -5 -4" intensity="0.2" color="1 1 1" on="true" shadowIntensity="0.9"></directionalLight>
+            <background skycolor="120 120 2"></background>
+            <directionallight id="directional" direction="6 -5 -4" intensity="0.2" color="1 1 1" on="true" shadowIntensity="0.9"></directionallight>
             
                         
 <!--            Gas Station             -->
@@ -40,23 +40,34 @@
             
 <!--            Ground              -->
             
-            <transform translation="0 -1 0">
-                <shape>
+            <transform translation="0 -0.9 -16">
+            <shape>
                     <appearance>
-                        <ImageTexture url="https://i.imgur.com/aMfeKKq.png"></ImageTexture>
+                        <ImageTexture url="https://i.imgur.com/w1WP2tm.png"></ImageTexture>
                     </appearance>
-                    <box DEF="ground" size="40 1 24" solid="true"/>
-                </shape>
+                    <box DEF="ground1" size="40 1 8" solid="true"/>
+            </shape>
             </transform>
             
+            <transform translation="-7 -0.9 0">
+            <shape>
+                    <appearance>
+                        <ImageTexture url="https://i.imgur.com/4rr3FSM.png"></ImageTexture>
+                    </appearance>
+                    <box DEF="ground1" size="32 1 24" solid="true"/>
+            </shape>
+            </transform>
+
+<!--
             <transform translation="-0.7 -1 1">
                 <shape>
                     <appearance>
-                        <ImageTexture url="https://i.imgur.com/TXukEBZ.jpg"></ImageTexture>
+                        <ImageTexture url="https://i.imgur.com/ks73sSD.png"></ImageTexture>
                     </appearance>
                     <box DEF="grounds" size="50 1 50" solid="true"/>
                 </shape>
             </transform>
+-->
             
             
 <!--            Main Building           -->
@@ -1204,14 +1215,11 @@
                         </shape>
                     </transform> 
                     
-                    </group>
-                  </group>   
-                </group>
-            </transform>
-        
+                    <!--            Costa Cup Advert            -->
             
-<!--            Costa Cup Advert            -->
-            
+        <transform translation="-3.5 0 5">            
+        <group DEF="costacup">
+                    
             <transform translation="-9 -0.4 -18">
                         <shape>
                             <appearance>
@@ -1257,13 +1265,17 @@
                         </shape>
             </transform> 
             
+        </group>
+        </transform>
             
 <!--            Stand Gas Sign Column       -->
 
             
 <!--            Signs           -->
             
-            <group DEF="sign">
+                    
+            <transform rotation="0 0.7 0 0.7" translation="6.2 0 -5">
+        <group DEF="sign">
                 
                     <transform translation="-9.6 1 -19">
                         <shape>
@@ -1283,15 +1295,17 @@
                         </shape>
                     </transform>
                 
-            </group>
+        </group>
+            </transform>    
             
-            <transform translation="-8.5 0 3.5" rotation="0 0 0 1.57">
-            <group USE="sign"></group>
-            </transform>
+        <transform translation="-10 0 9.3" rotation="0 0 0 1.57">
+        <group USE="sign"></group>
+        </transform>
             
             
-            <transform translation="-3.4 0 -4.2" rotation="0 1.57 0 1.57">
-            <group DEF="signstop">
+        <transform translation="-2 0 2" rotation="0 1.57 0 1.57">
+                
+        <group DEF="signstop">
                         
                         <transform translation="-9.6 1 -19">
                         <shape>
@@ -1310,15 +1324,28 @@
                         <cylinder DEF="PoleCircleStop" radius="0.4" height="0.01"/>
                         </shape>
             </transform>
-                </group>
             
-            <transform translation="-8 0 0" rotation="0 0 0 1.57">
+        </group>
+            
+            <transform translation="-7 0 1" rotation="0 0 0 1.57">
             <group USE="signstop"></group>
             </transform>
             
             </transform>
             
             
+                    
+                    
+                    
+                    
+                    
+                    </group>
+                  </group>   
+                </group>
+            </transform>
+        
+            
+
             
             
             
