@@ -48,6 +48,7 @@ body {
 .flex-item {
     height: calc(100vh*0.2);
     text-align: center;
+    font-size: 2rem;
     line-height: 8rem;
     opacity: 0.5;
     filter: alpha(opacity=50); /* For IE8 and earlier */
@@ -117,7 +118,14 @@ a.viewport:hover {
 
 
 .second {
-    background-image: url(Texture/ad_yellow.gif);
+    background-image: url(Texture/viewport2.png);
+    background-position: center;
+    background-size: cover;  
+    background-repeat: no-repeat;
+}
+
+.third {
+    background-image: url(Texture/viewport34.png);
     background-position: center;
     background-size: cover;  
     background-repeat: no-repeat;
