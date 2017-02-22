@@ -34,13 +34,14 @@
             
             <viewpoint id="default" position="-24.5 11 25" orientation="2 5 1 -0.8" description="Default Viewpoint"></viewpoint>
             
-            <viewpoint id="view1" position="-40.5 2 13" orientation="0 1 0 -01.1" description="Default Viewpoint"></viewpoint>
+            <viewpoint id="viewone" position="-40.5 2 13" orientation="0 1 0 -01.1" description="view1"></viewpoint>
             
-            <viewpoint id="view2" position="-10.5 8 25" orientation="2 2 0 -0.4" description="Default Viewpoint"></viewpoint>
+            <viewpoint id="viewtwo" position="-10.5 8 25" orientation="2 2 0 -0.4" description="view2"></viewpoint>
             
-            <viewpoint id="view3" position="-15.5 2 -32" orientation="0 5 0 -2.8" description="Default Viewpoint"></viewpoint>
+            <viewpoint id="viewthree" position="-15.5 2 -32" orientation="0 5 0 -2.8" description="view3"></viewpoint>
             
             <!--            I have decided to apply background picture to x3D element instead of using <background> tag here        -->
+            
             <directionallight id="directional" direction="6 -5 -4" intensity="0.2" color="1 1 1" on="true" shadowIntensity="0.9"></directionallight>
             
                         
@@ -1367,13 +1368,31 @@
         
         <div class="menu">
             <div class="flex-container">
-                <div class="flex-item one"><a href="index.html" class="viewport first">Viewport 1</a></div>
-                <div class="flex-item one"><a href="index.html" class="viewport second">Viewport 2</a></div>
-                <div class="flex-item one"><a href="index.html" class="viewport third">Viewport 3</a></div>
+                <div onclick="viewone()" class="flex-item one"><a class="viewport first">Viewport1</a></div>
+                <div onclick="viewtwo()" class="flex-item two"><a class="viewport second">Viewport2</a></div>
+                <div onclick="viewthree()" class="flex-item three"><a class="viewport third">Viewport3</a></div>
             </div>
         </div>
         
     </div>
+    
+<!--    Functions for the change of viewport        -->
+    <script>
+    
+        function viewone() {
+            document.getElementById('viewone').setAttribute('set_bind','true');
+        }
+        
+        function viewtwo() {
+            document.getElementById('viewtwo').setAttribute('set_bind','true');
+        }
+        
+        function viewthree() {
+            document.getElementById('viewthree').setAttribute('set_bind','true');
+        }
+        
+    </script>
+    
 </body>
-
+    
 </html>
