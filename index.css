@@ -14,14 +14,6 @@ body {
     font-weight: 700;
 }
 
-html, body {
-    background-image: url(bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
 #model {
     display: block;
     width: 100%;
@@ -63,7 +55,6 @@ html, body {
 }
 
 .one {
-    background-color: greenyellow;
     flex: 1;
     -webkit-transition: 2s; /* Safari */
     transition: 2s;
@@ -104,9 +95,30 @@ html, body {
     transition: 2s;
 }
 
-a.menutext {
+a.viewport {
     text-decoration: none;
     display: block;
+    opacity: 0.5;
+    transition: 1s;
 }
 
 
+a.viewport:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.first {
+    background-image: url(Texture/viewport1.png);
+    background-position: center;
+    background-size: cover;  
+    background-repeat: no-repeat;
+}
+
+
+.second {
+    background-image: url(Texture/ad_yellow.gif);
+    background-position: center;
+    background-size: cover;  
+    background-repeat: no-repeat;
+}

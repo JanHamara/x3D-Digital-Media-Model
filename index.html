@@ -4,21 +4,22 @@
     
 <head>
 
-     <title>Jan Hamara Project - x3D</title>
-
+    <title>2184316h - x3D Project</title>
+    
+<!--        Meta Data       -->
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta name="description" content="Sainsbury's Gas Pump"/>
     <meta name="author" content="Jan Hamara"/>
-    <meta name="keywords" content="keyword"/>
+    <meta name="keywords" content="x3D, WebGL, Digital, Media, Project, Modelling, x3DOM"/>
     <meta http-equiv="Content-Type" content="text/html">
     
 <!--     x3D Script & base CSS file -->
 	 <script src="http://www.x3dom.org/release/x3dom.js"></script>
 	 <link rel="stylesheet" href="http://www.x3dom.org/release/x3dom.css"/>
     
-<!--    Personal CSS file-->
+<!--    External CSS file-->
     <link rel="stylesheet" href="index.css"/>
 
 </head>
@@ -26,18 +27,17 @@
 <body>
     
     <div class="wrapper">
-    <x3d id="model">
+        <x3d id="model">
         <scene>
             
 <!--            Viewpoints - Background - Lights            -->
             
-            <viewpoint id="default" position="-27.5 12 40" orientation="-0.5 -1.8 0 0.6" description="Modellingangle"></viewpoint>
-            <!--            I have decided to apply background picture to x3D element instead of using <background> tag here-->
+            <viewpoint id="default" position="-27.5 12 40" orientation="-0.5 -1.8 0 0.6" description="Default Viewpoint"></viewpoint>
+            <!--            I have decided to apply background picture to x3D element instead of using <background> tag here        -->
             <directionallight id="directional" direction="6 -5 -4" intensity="0.2" color="1 1 1" on="true" shadowIntensity="0.9"></directionallight>
             
                         
 <!--            Gas Station             -->
-            
             
 <!--            Ground              -->
             
@@ -55,7 +55,7 @@
                     <appearance>
                         <ImageTexture url="https://i.imgur.com/w1WP2tm.png"></ImageTexture>
                     </appearance>
-                    <box DEF="ground1" size="40 0.1 8" solid="true"/>
+                    <box DEF="ground2" size="40 0.1 8" solid="true"/>
             </shape>
             </transform>
             
@@ -64,7 +64,7 @@
                     <appearance>
                         <ImageTexture url="https://i.imgur.com/PCzCa2f.png"></ImageTexture>
                     </appearance>
-                    <box DEF="ground2" size="32 0.1 24" solid="true"/>
+                    <box DEF="ground3" size="32 0.1 24" solid="true"/>
             </shape>
             </transform>
 
@@ -73,7 +73,7 @@
                     <appearance>
                         <ImageTexture url="https://i.imgur.com/6LGb2lC.png"></ImageTexture>
                     </appearance>
-                    <box DEF="ground2" size="3.2 0.1 10" solid="true"/>
+                    <box DEF="ground4" size="3.2 0.1 10" solid="true"/>
             </shape>
             </transform>
             
@@ -82,7 +82,7 @@
                     <appearance>
                         <ImageTexture url="https://i.imgur.com/Ffeto2z.png"></ImageTexture>
                     </appearance>
-                    <box DEF="ground1" size="47 0.1 8" solid="true"/>
+                    <box DEF="ground5" size="47 0.1 8" solid="true"/>
             </shape>
             </transform>
             
@@ -260,7 +260,7 @@
                     <appearance>
                        <material diffuseColor="0 0 0" specularColor="0.2 0.2 0.2" shininess="0.99"></material>
                     </appearance>
-                <cylinder DEF="blackATMcolumn" radius="0.08" height="0.1" solid="true" />
+                <cylinder DEF="blackATMcolumn2" radius="0.08" height="0.1" solid="true" />
                 </shape>
             </transform>
             
@@ -269,7 +269,7 @@
                     <appearance>
                        <material diffuseColor="0 0 0" specularColor="0.2 0.2 0.2" shininess="0.99"></material>
                     </appearance>
-                <cylinder DEF="blackATMcolumn" radius="0.1" height="0.2" solid="true" />
+                <cylinder DEF="blackATMcolumn3" radius="0.1" height="0.2" solid="true" />
                 </shape>
             </transform>
             
@@ -401,7 +401,7 @@
 
                     <!--                Roof Sides - Red Sainsbury's Cover          -->
                     
-                <group DEF="PumpRoof">
+                <group DEF="PumpRooftop">
                                     
                     <transform translation="-7 7 5">
                         <shape>
@@ -453,7 +453,7 @@
                             <appearance>
                                 <ImageTexture url="https://i.imgur.com/9UwfT7B.gif"></ImageTexture>
                             </appearance>
-                        <box DEF="ShortSideIn" size="0.2 1.2 10" solid="true"/>
+                        <box USE="ShortSideIn"/>
                         </shape>
                     </transform>
 
@@ -462,7 +462,7 @@
                             <appearance>
                                  <material diffuseColor="0.5 0.5 0.5" specularColor="1 1 1" shininess="0.8"></material>
                             </appearance>
-                        <box DEF="ShortSide" size="0.1 1.2 10" solid="true"/>
+                        <box DEF="ShortSide2" size="0.1 1.2 10" solid="true"/>
                         </shape>
                     </transform>
                     
@@ -521,7 +521,7 @@
                             <appearance>
                                  <ImageTexture url="https://i.imgur.com/aQJUBwM.gif"></ImageTexture>
                             </appearance>
-                        <box DEF="ColumnSign" size="0.6 1 0.1" solid="true"/>
+                        <box USE="ColumnSign"/>
                         </shape>
                     </transform>
                     
@@ -530,7 +530,7 @@
                             <appearance>
                                  <ImageTexture url="https://i.imgur.com/lcfgLI8.gif"></ImageTexture>
                             </appearance>
-                        <box DEF="ColumnSign" size="0.6 1 0.1" solid="true"/>
+                        <box USE="ColumnSign"/>
                         </shape>
                     </transform>
                     
@@ -539,7 +539,7 @@
                             <appearance>
                                  <ImageTexture url="https://i.imgur.com/U0TMVXb.gif"></ImageTexture>
                             </appearance>
-                        <box DEF="ColumnSign" size="0.6 1 0.1" solid="true"/>
+                        <box USE="ColumnSign"/>
                         </shape>
                     </transform>
                     
@@ -548,7 +548,7 @@
                             <appearance>
                                  <ImageTexture url="https://i.imgur.com/J98U80g.gif"></ImageTexture>
                             </appearance>
-                        <box DEF="ColumnSign" size="0.6 1 0.1" solid="true"/>
+                        <box USE="ColumnSign"/>
                         </shape>
                     </transform>
                     
@@ -557,7 +557,7 @@
                             <appearance>
                                  <ImageTexture url="https://i.imgur.com/rWkEMUA.gif"></ImageTexture>
                             </appearance>
-                        <box DEF="ColumnSign" size="0.6 1 0.1" solid="true"/>
+                        <box USE="ColumnSign"/>
                         </shape>
                     </transform>
                     
@@ -595,7 +595,7 @@
                             <appearance>
                                 <ImageTexture url="https://i.imgur.com/TNhH7YX.gif"></ImageTexture>
                             </appearance>
-                        <box DEF="Column" size="0.1 0.5 0.3" solid="true"/>
+                        <box DEF="Column2" size="0.1 0.5 0.3" solid="true"/>
                         </shape>
                     </transform>
                     
@@ -1063,20 +1063,6 @@
                     </transform>
                     
                     
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                         <!--            BrickWall            -->
 
                     <transform translation="-21 0 8.25">
@@ -1291,7 +1277,7 @@
 <!--            Signs           -->
             
                     
-            <transform rotation="0 0.7 0 0.7" translation="6.2 0 -5">
+        <transform rotation="0 0.7 0 0.7" translation="6.2 0 -5">
         <group DEF="sign">
                 
                     <transform translation="-9.6 1 -19">
@@ -1313,7 +1299,7 @@
                     </transform>
                 
         </group>
-            </transform>    
+        </transform>    
             
         <transform translation="-10 0 9.3" rotation="0 0 0 1.57">
         <group USE="sign"></group>
@@ -1324,7 +1310,7 @@
                 
         <group DEF="signstop">
                         
-                        <transform translation="-9.6 1 -19">
+            <transform translation="-9.6 1 -19">
                         <shape>
                             <appearance>
                                 <ImageTexture url="https://i.imgur.com/X7BLuUp.gif"></ImageTexture>
@@ -1361,16 +1347,12 @@
                 <box DEF="sidewalk" size="3 0.1 33" solid="true"/>
             </shape>
         </transform>
-                    
-                    
-                    
-                    
-                    </group>
-                  </group>   
-                </group>
-            </transform>
+       </group>
+      </group>   
+     </group>
+    </transform>
     
-    </scene>        
+</scene>        
 </x3d>   
         
         
@@ -1378,9 +1360,9 @@
         
         <div class="menu">
             <div class="flex-container">
-                <div class="flex-item one"><a href="index.html" class="menutext">Viewport 1</a></div>
-                <div class="flex-item one"><a href="index.html" class="menutext">Viewport 1</a></div>
-                <div class="flex-item one"><a href="index.html" class="menutext">Viewport 1</a></div>
+                <div class="flex-item one"><a href="index.html" class="viewport first">Viewport 1</a></div>
+                <div class="flex-item one"><a href="index.html" class="viewport second">Viewport 1</a></div>
+                <div class="flex-item one"><a href="index.html" class="viewport third">Viewport 1</a></div>
             </div>
         </div>
         
