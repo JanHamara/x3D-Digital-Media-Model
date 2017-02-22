@@ -23,8 +23,9 @@ html, body {
 }
 
 #model {
+    display: block;
     width: 100%;
-    height: 70%;
+    height: 80%;
 }
 
 
@@ -32,6 +33,76 @@ html, body {
     background-color: antiquewhite;
     width: 100%;
     height: 100vh;
-    margin: auto;
 }
+
+/* This is a styling for menu, where user can pick different viewports - it is making use of CSS3 Flexbox */
+
+.menu {
+    display: block;
+    height: 20%;
+    width: 100%;
+    float: left;
+}
+
+.flex-container {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.flex-item {
+    height: calc(100vh*0.2);
+    text-align: center;
+    line-height: 8rem;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    border: 1px solid black;
+}
+
+.one {
+    background-color: greenyellow;
+    flex: 1;
+    -webkit-transition: 2s; /* Safari */
+    transition: 2s;
+}
+
+.two {
+    background-color: skyblue;
+    flex: 1;
+    -webkit-transition: 2s; /* Safari */
+    transition: 2s;
+}
+
+.three {
+    background-color: hotpink;
+    flex: 1;
+    -webkit-transition: 2s; /* Safari */
+    transition: 2s;
+}
+
+.one:hover {
+    background-color: greenyellow;
+    flex: 2;
+    -webkit-transition: 2s; /* Safari */
+    transition: 2s;
+}
+
+.two:hover {
+    background-color: skyblue;
+    flex: 2;
+    -webkit-transition: 2s; /* Safari */
+    transition: 2s;
+}
+
+.three:hover {
+    background-color: hotpink;
+    flex: 2;
+    -webkit-transition: 2s; /* Safari */
+    transition: 2s;
+}
+
+a.menutext {
+    text-decoration: none;
+    display: block;
+}
+
 
